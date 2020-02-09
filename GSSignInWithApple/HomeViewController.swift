@@ -1,5 +1,5 @@
 //
-//  HomeVC.swift
+//  HomeViewController.swift
 //  GSSignInWithApple
 //
 //  Created by Gati on 05/02/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeViewController: UIViewController {
     //MARK:- Outlets
     @IBOutlet weak var labelUserID: UILabel!
     @IBOutlet weak var labelGivenName: UILabel!

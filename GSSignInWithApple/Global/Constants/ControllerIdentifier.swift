@@ -9,6 +9,6 @@
 import Foundation
 
 enum ControllerIdentifier : String {
-    case Login = "LoginVC"
-    case Home = "HomeVC"
+    case Login = "LoginViewController"
+    case Home = "HomeViewController"
 }

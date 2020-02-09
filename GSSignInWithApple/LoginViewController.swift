@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  LoginViewController.swift
 //  GSSignInWithApple
 //
 //  Created by Gati on 05/02/20.
@@ -9,7 +9,7 @@
 import UIKit
 import AuthenticationServices
 
-class LoginVC: UIViewController {
+class LoginViewController: UIViewController {
     //MARK:- IBOutlet
     @IBOutlet weak var textFieldEmail : UITextField!
     @IBOutlet weak var textFieldPassword : UITextField!
@@ -67,7 +67,7 @@ class LoginVC: UIViewController {
     
     private func showResultViewController(userIdentifier: String, fullName: PersonNameComponents?, email: String?) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let vcHome = storyboard.instantiateViewController(withIdentifier: "HomeVC") as? HomeVC {
+        if let vcHome = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController {
             vcHome.strUserID = userIdentifier
             vcHome.strGivenName = fullName?.givenName
             vcHome.strFamilyName = fullName?.familyName
@@ -102,7 +102,7 @@ class LoginVC: UIViewController {
     }
 }
 
-extension LoginVC: ASAuthorizationControllerDelegate {
+extension LoginViewController: ASAuthorizationControllerDelegate {
     
     /// Complete Authorization
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
@@ -143,7 +143,7 @@ extension LoginVC: ASAuthorizationControllerDelegate {
     }
 }
 
-extension LoginVC: ASAuthorizationControllerPresentationContextProviding {
+extension LoginViewController: ASAuthorizationControllerPresentationContextProviding {
     /// - Tag: provide_presentation_anchor
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return self.view.window!
