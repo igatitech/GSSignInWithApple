@@ -4,7 +4,7 @@ Apple has introduced a tremendously new way to sign in to apps using their Apple
 
 > Interestingly, if your app is using any third-party Sign-In service(e.g. Facebook, Google, Twitter, LinkedIn) to authenticate users must also offer Sign-In with Apple as an equivalent option.
 
-![alt text](https://github.com/igatitech/GSSqliteGlobal/blob/master/Resources/SignInWithApple.png)
+![alt text](https://github.com/igatitech/GSSignInWithApple/blob/master/Resources/SignInWithApple.png)
 
 **@Note:** There is a high chance Apple may reject your app if you are using
 third party SignIn options and not using SignIn with Apple option.
@@ -17,7 +17,7 @@ AppStore Review Guidelines: [SignIn with Apple](https://developer.apple.com/app-
 (com.iGatiTech.GSSignInWithApple) of your application and enable
 SignIn with Apple
 
-![alt text](https://github.com/igatitech/GSSqliteGlobal/blob/master/Resources/AppID.png)
+![alt text](https://github.com/igatitech/GSSignInWithApple/blob/master/Resources/AppID.png)
 
  - Generate Certificates and Provisioning profiles
  
@@ -31,7 +31,7 @@ SignIn with Apple
  - Setup Team, Provisioning Profile for which you have enabled
  SignIn with Apple on the Apple Developer portal.
  
- ![alt text](https://github.com/igatitech/GSSqliteGlobal/blob/master/Resources/Capability.png)
+ ![alt text](https://github.com/igatitech/GSSignInWithApple/blob/master/Resources/Capability.png)
  
  ## Implementation
  
@@ -54,7 +54,7 @@ func setUpLoginButtonView() {
 }
 ```
 
-![alt text](https://github.com/igatitech/GSSqliteGlobal/blob/master/Resources/Login.png)
+![alt text](https://github.com/igatitech/GSSignInWithApple/blob/master/Resources/Login.png)
 
 - Implement ```handleAuthorizationAppleIDButtonPress``` method. This method will be called when user will tap the **Sign in with Apple** button. It will initialise a controller ```ASAuthorizationController``` to perform the request.
 
@@ -72,7 +72,7 @@ func setUpLoginButtonView() {
 ```
 - The system then checks whether the user is signed in with their Apple ID on the device. If the user is not signed in at the system-level, the app presents an alert directing the user to sign in with their Apple ID in Settings. 
 
-![alt text](https://github.com/igatitech/GSSqliteGlobal/blob/master/Resources/Setting.png)          ![alt text](https://github.com/igatitech/GSSqliteGlobal/blob/master/Resources/SettingSignIn.png)
+![alt text](https://github.com/igatitech/GSSignInWithApple/blob/master/Resources/Setting.png)          ![alt text](https://github.com/igatitech/GSSignInWithApple/blob/master/Resources/SettingSignIn.png)
 
 - Setup presentation context provider.
     - It will present Sign In with Apple action sheet on top of the window.
@@ -202,7 +202,7 @@ extension SceneDelegate {
 
 ## ScreenShots
 
-![alt text](https://github.com/igatitech/GSSqliteGlobal/blob/master/Resources/SignIn1.png)          ![alt text](https://github.com/igatitech/GSSqliteGlobal/blob/master/Resources/SignIn2.png)          ![alt text](https://github.com/igatitech/GSSqliteGlobal/blob/master/Resources/SignIn3.png)          ![alt text](https://github.com/igatitech/GSSqliteGlobal/blob/master/Resources/SignIn4.png)
+![alt text](https://github.com/igatitech/GSSignInWithApple/blob/master/Resources/SignIn1.png)          ![alt text](https://github.com/igatitech/GSSignInWithApple/blob/master/Resources/SignIn2.png)          ![alt text](https://github.com/igatitech/GSSignInWithApple/blob/master/Resources/SignIn3.png)          ![alt text](https://github.com/igatitech/GSSignInWithApple/blob/master/Resources/SignIn4.png)
 
 **Happy Coding! Cheers!!** 🥂 
 
