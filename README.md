@@ -134,12 +134,12 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
 
 ```swift
 private func showPasswordCredentialAlert(username: String, password: String) {
-        let message = "The app has received your selected credential from the keychain. \n\n Username: \(username)\n Password: \(password)"
-        let alertController = UIAlertController(title: "Keychain Credential Received",
-                                                message: message,
-                                                preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-        self.present(alertController, animated: true, completion: nil)
+    let message = "The app has received your selected credential from the keychain. \n\n Username: \(username)\n Password: \(password)"
+    let alertController = UIAlertController(title: "Keychain Credential Received",
+                                            message: message,
+                                            preferredStyle: .alert)
+    alertController.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+    self.present(alertController, animated: true, completion: nil)
 }
 ```
 
