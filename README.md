@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/igatitech/GSSignInWithApple/blob/master/LICENSE) 
+![Swift: 5.0.x](https://img.shields.io/badge/Swift-5.0.x-orange)
+
 # GSSignInWithApple
 
 Apple has introduced a tremendously new way to sign in to apps using their Apple ID. This project has complete implementation of **Sign In with Apple** functionality.
